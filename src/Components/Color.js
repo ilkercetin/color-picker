@@ -8,7 +8,7 @@ function Color(props) {
         setCodeVisibility(shouldShow);
     }
 
-    function changeColorText () {
+    function changeColorText() {
         setColorText('COPIED!');
 
         setTimeout(() => {
