@@ -62,3 +62,17 @@ code {
 .color-window-title:hover {
     background-color: darkgreen;
 }
+
+@media screen and (max-width: 800px) {
+    .color {
+        width: 20%;
+        height: 20vw;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .color {
+        width: 33.333%;
+        height: 33.333vw;
+    }
+}
