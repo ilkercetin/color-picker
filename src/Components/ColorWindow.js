@@ -5,7 +5,7 @@ function ColorWindow(props) {
     return (
         <div className={'color-window'}>
             <div className={'color-window-title'} onClick={props.setColors}>
-                REFRESH COLORS
+                NEW COLORS
             </div>
             <div className={'color-wrapper'}>
                 {props.colors.map(color => (
