@@ -10,11 +10,16 @@ function App() {
 
     function generateRandom100Color() {
         let colorList = [];
+        const letters = '0123456789ABCDEF'.split('');
 
-        for (let i = 0; i < 100; i++) {
-            let colorCode = '#' + (Math.random() * 0xFFFFFF << 0).toString(16);
+        for (let i = 0; i < 50; i++) {
+            let color = '#';
 
-            colorList.push(colorCode);
+            for (let j = 0; j < 6; j++) {
+                color += letters[Math.round(Math.random() * (letters.length - 1))];
+            }
+
+            colorList.push(color);
         }
 
         return colorList;
